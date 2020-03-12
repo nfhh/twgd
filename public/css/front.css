@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    display: flex;
+    height: 100vh;
+}
+
+main nav {
+    width: 480px;
+    background-color: #cdcdcd;
+    padding-right: 80px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+main article {
+    background: #fff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 68px;
+    padding-right: 68px;
+}
+
+
+nav .one {
+    align-self: flex-end;
+    padding-top: 10px;
+}
+
+nav .two {
+    color: #fff;
+    align-self: flex-end;
+    font-size: 26px;
+    text-align: right;
+}
+
+nav .three {
+    align-self: flex-end;
+    padding-bottom: 60px;
+}
+
+article .one {
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .one .right select {
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #E9E9E9;
+    padding: 8px 16px;
+}
+
+article .one .left {
+    width: 120px;
+    display: flex;
+    justify-content: space-between;
+}
+
+article .two, article .two .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article .two {
+    padding-top: 10px;
+}
+
+article .two img {
+    width: 100%;
+}
+
+
+article .two .top .inside1 h1 {
+    font-size: 36px;
+}
+
+article .two .top .inside2 {
+    display: flex;
+    flex-direction: column;
+}
+
+article .two .top .inside2 label {
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+article .two .top .inside2 select {
+    width: 600px;
+    font-size: 16px;
+    background-color: #ffffff;
+    border: 1px solid #E9E9E9;
+    padding: 8px 16px;
+}
+
+article .two .bottom button {
+    background-color: #ffffff;
+    border: 1px solid #E9E9E9;
+    color: #333333;
+    padding: 6px 20px;
+    font-size: 16px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.vd {
+    display: inherit;
+    flex: 1;
+}
+
+.mt-3 {
+    margin-top: 20px;
+}
+
+.mt-6 {
+    margin-top: 60px;
+}
