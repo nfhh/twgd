@@ -1881,24 +1881,24 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
         title: 'Magyar/Magyarország'
       }, {
         id: 7,
+        value: 'ru',
+        title: 'Türkçe/Türkiye'
+      }, {
+        id: 8,
         value: 'ko',
         title: '한국어/한국'
       }, {
-        id: 8,
+        id: 9,
         value: 'ja',
         title: '日本語/日本'
       }, {
-        id: 9,
+        id: 10,
         value: 'cn',
         title: '简体中文/中国'
       }, {
-        id: 10,
+        id: 11,
         value: 'tw',
         title: '繁體中文/中国'
-      }, {
-        id: 11,
-        value: 'ru',
-        title: 'Türkçe/Türkiye'
       }],
       types: [],
       sizes: [],
@@ -2057,6 +2057,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
+    contentLen: Number,
     curProduct: String,
     installTip: String
   }
@@ -43894,7 +43895,8 @@ var render = function() {
       _c("sidebar", {
         attrs: {
           curProduct: _vm.curProductName,
-          installTip: _vm.listenInstallTip
+          installTip: _vm.listenInstallTip,
+          contentLen: _vm.steps.length
         }
       }),
       _vm._v(" "),
@@ -43918,8 +43920,8 @@ var render = function() {
                       _c("img", {
                         attrs: {
                           src: "/images/left.png",
-                          width: "26",
-                          height: "26"
+                          width: "20",
+                          height: "20"
                         }
                       })
                     ]
@@ -43940,8 +43942,8 @@ var render = function() {
                       _c("img", {
                         attrs: {
                           src: "/images/right.png",
-                          width: "26",
-                          height: "26"
+                          width: "20",
+                          height: "20"
                         }
                       })
                     ]
@@ -44202,7 +44204,20 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("nav", [
-    _vm._m(0),
+    _c("div", { staticClass: "one" }, [
+      _vm.contentLen > 0
+        ? _c("a", { attrs: { href: "" } }, [
+            _c("img", {
+              attrs: {
+                src: "/images/home.png",
+                alt: "",
+                width: "40",
+                height: "40"
+              }
+            })
+          ])
+        : _vm._e()
+    ]),
     _vm._v(" "),
     _c("div", { staticClass: "two" }, [
       _c("p", [_c("strong", [_vm._v(_vm._s(_vm.curProduct))])]),
@@ -44210,22 +44225,10 @@ var render = function() {
       _c("p", [_c("strong", [_vm._v(_vm._s(_vm.installTip))])])
     ]),
     _vm._v(" "),
-    _vm._m(1)
+    _vm._m(0)
   ])
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "one" }, [
-      _c("a", { attrs: { href: "" } }, [
-        _c("img", {
-          attrs: { src: "/images/home.png", alt: "", width: "40", height: "40" }
-        })
-      ])
-    ])
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

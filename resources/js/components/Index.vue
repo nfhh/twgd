@@ -1,15 +1,15 @@
 <template>
     <div class="vd">
-        <sidebar :curProduct="curProductName" :installTip="listenInstallTip"></sidebar>
+        <sidebar :curProduct="curProductName" :installTip="listenInstallTip" :contentLen="steps.length"></sidebar>
         <article>
             <div class="one">
                 <div class="left">
                     <div class="left" v-if="steps.length">
                         <a href="#" @click.prevent="goToStep(index - 1)">
-                            <img src="/images/left.png" width="26" height="26">
+                            <img src="/images/left.png" width="20" height="20">
                         </a>
                         <a href="#" @click.prevent="goToStep(index + 1)">
-                            <img src="/images/right.png" width="26" height="26">
+                            <img src="/images/right.png" width="20" height="20">
                         </a>
                     </div>
                 </div>
@@ -156,11 +156,11 @@
                     {id: 4, value: 'it', title: 'Italiano/Italia'},
                     {id: 5, value: 'es', title: 'Español/España'},
                     {id: 6, value: 'hu', title: 'Magyar/Magyarország'},
-                    {id: 7, value: 'ko', title: '한국어/한국'},
-                    {id: 8, value: 'ja', title: '日本語/日本'},
-                    {id: 9, value: 'cn', title: '简体中文/中国'},
-                    {id: 10, value: 'tw', title: '繁體中文/中国'},
-                    {id: 11, value: 'ru', title: 'Türkçe/Türkiye'},
+                    {id: 7, value: 'ru', title: 'Türkçe/Türkiye'},
+                    {id: 8, value: 'ko', title: '한국어/한국'},
+                    {id: 9, value: 'ja', title: '日本語/日本'},
+                    {id: 10, value: 'cn', title: '简体中文/中国'},
+                    {id: 11, value: 'tw', title: '繁體中文/中国'}
                 ],
                 types: [],
                 sizes: [],

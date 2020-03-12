@@ -1,7 +1,7 @@
 <template>
     <nav>
         <div class="one">
-            <a href=""><img src="/images/home.png" alt="" width="40" height="40"></a>
+            <a href="" v-if="contentLen > 0"><img src="/images/home.png" alt="" width="40" height="40"></a>
         </div>
         <div class="two">
             <p><strong>{{ curProduct }}</strong></p>
@@ -16,6 +16,7 @@
 <script>
     export default {
         props: {
+            contentLen: Number,
             curProduct: String,
             installTip: String
         },
