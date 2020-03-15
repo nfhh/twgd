@@ -10,7 +10,7 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    @include('UEditor::head')
+    @include('vendor.ueditor.assets')
 </head>
 <body>
 <div id="app">

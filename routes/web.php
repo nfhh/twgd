@@ -16,10 +16,11 @@ Route::get('/test', function () {
 
 Route::prefix(env('ADMIN_PRE'))->name('admin.')->namespace('Admin')->middleware('auth:admin')->group(function () {
     Route::get('/', 'AdminController@index');
-    Route::post('/uploadimage', 'UploadController@index');
     Route::resource('product', 'ProductController');
     Route::resource('step', 'StepController');
 });
+
+Route::post('/uploadimage', 'UploadController@index');
 
 Route::prefix(env('ADMIN_PRE'))->name('admin.')->namespace('Admin')->group(function () {
     Route::get('/login', 'LoginController@showLoginForm');
