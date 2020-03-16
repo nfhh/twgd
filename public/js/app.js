@@ -44172,7 +44172,12 @@ var render = function() {
                     )
                   ])
                 ]
-              : [_c("div", { domProps: { innerHTML: _vm._s(_vm.cur_step) } })]
+              : [
+                  _c("div", {
+                    staticClass: "content",
+                    domProps: { innerHTML: _vm._s(_vm.cur_step) }
+                  })
+                ]
           ],
           2
         )

@@ -75,7 +75,12 @@ article .two {
 }
 
 article .two img {
-    width: 100%;
+    max-width: 100%;
+}
+
+article .two .content {
+    height: 100vh;
+    overflow-y: auto;
 }
 
 

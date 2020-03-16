@@ -59,7 +59,7 @@
                     </div>
                 </template>
                 <template v-else>
-                    <div v-html="cur_step"></div>
+                    <div v-html="cur_step" class="content"></div>
                 </template>
             </div>
         </article>
