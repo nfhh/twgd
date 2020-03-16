@@ -14,7 +14,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <select v-model="selected_lan">
+                    <select v-model="selected_lan" v-if="steps.length === 0">
                         <option v-for="item of lans" :key="item.id" :value="item.value">{{ item.title }}</option>
                     </select>
                 </div>

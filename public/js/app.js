@@ -43953,42 +43953,44 @@ var render = function() {
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "right" }, [
-            _c(
-              "select",
-              {
-                directives: [
+            _vm.steps.length === 0
+              ? _c(
+                  "select",
                   {
-                    name: "model",
-                    rawName: "v-model",
-                    value: _vm.selected_lan,
-                    expression: "selected_lan"
-                  }
-                ],
-                on: {
-                  change: function($event) {
-                    var $$selectedVal = Array.prototype.filter
-                      .call($event.target.options, function(o) {
-                        return o.selected
-                      })
-                      .map(function(o) {
-                        var val = "_value" in o ? o._value : o.value
-                        return val
-                      })
-                    _vm.selected_lan = $event.target.multiple
-                      ? $$selectedVal
-                      : $$selectedVal[0]
-                  }
-                }
-              },
-              _vm._l(_vm.lans, function(item) {
-                return _c(
-                  "option",
-                  { key: item.id, domProps: { value: item.value } },
-                  [_vm._v(_vm._s(item.title))]
+                    directives: [
+                      {
+                        name: "model",
+                        rawName: "v-model",
+                        value: _vm.selected_lan,
+                        expression: "selected_lan"
+                      }
+                    ],
+                    on: {
+                      change: function($event) {
+                        var $$selectedVal = Array.prototype.filter
+                          .call($event.target.options, function(o) {
+                            return o.selected
+                          })
+                          .map(function(o) {
+                            var val = "_value" in o ? o._value : o.value
+                            return val
+                          })
+                        _vm.selected_lan = $event.target.multiple
+                          ? $$selectedVal
+                          : $$selectedVal[0]
+                      }
+                    }
+                  },
+                  _vm._l(_vm.lans, function(item) {
+                    return _c(
+                      "option",
+                      { key: item.id, domProps: { value: item.value } },
+                      [_vm._v(_vm._s(item.title))]
+                    )
+                  }),
+                  0
                 )
-              }),
-              0
-            )
+              : _vm._e()
           ])
         ]),
         _vm._v(" "),
