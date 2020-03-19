@@ -53,7 +53,7 @@
             <script id="tw" name="tw" type="text/plain"></script>
         </div>
         <div class="form-group">
-            <label for="ru">俄语</label>
+            <label for="ru">土耳其语</label>
             <script id="ru" name="ru" type="text/plain"></script>
         </div>
         <div class="form-group">

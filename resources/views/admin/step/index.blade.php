@@ -16,7 +16,7 @@
             <th scope="col">日语</th>
             <th scope="col">简体中文</th>
             <th scope="col">繁体中文</th>
-            <th scope="col">俄语</th>
+            <th scope="col">土耳其语</th>
             <th scope="col">序号</th>
             <th scope="col">操作</th>
         </tr>
@@ -48,4 +48,5 @@
         @endforeach
         </tbody>
     </table>
+    {{ $steps->links() }}
 @endsection
