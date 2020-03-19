@@ -46,7 +46,7 @@ nav .three {
 article .one {
     padding-top: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 article .one .right select {
