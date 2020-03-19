@@ -46,7 +46,11 @@ nav .three {
 article .one {
     padding-top: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+article .one .right {
+    padding-left: 68px;
 }
 
 article .one .right select {
@@ -79,7 +83,7 @@ article .two img {
 
 article .two .content {
     overflow-y: auto;
-    height: calc( 100vh - 45px);
+    height: calc(100vh - 45px);
 }
 
 
